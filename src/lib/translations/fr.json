@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "lang": "fr",
+    "name": "Français"
+  },
+  "nav": {
+    "solutions": "Solutions",
+    "expertises": "Expertises",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "cta": "Audit gratuit"
+  },
+  "hero": {
+    "subtitle": "L'IA au service de votre croissance",
+    "line1": "Votre entreprise mérite",
+    "phrase1": "un employé qui ne dort jamais.",
+    "phrase2": "des leads 24/7.",
+    "phrase3": "du temps & de l'argent.",
+    "phrase4": "une agence qui innove.",
+    "cta1": "Découvrez nos solutions",
+    "cta2": "Réservez un appel"
+  },
+  "powers": {
+    "title": "Vos nouveaux super-pouvoirs",
+    "what": "Ce que",
+    "brand": "Pulseia",
+    "changes": "change pour vous",
+    "p1_title": "Nous ne construisons pas des sites.",
+    "p1_desc": "Nous créons des systèmes qui génèrent de la croissance en continu.",
+    "p2_title": "Votre site devient votre meilleur commercial.",
+    "p2_desc": "Chatbot, devis instantané, pages dynamiques, disponibilité permanente.",
+    "smart_sites": "Smart Sites",
+    "chatbot": "Chatbot IA",
+    "quotes": "Devis dynamique",
+    "autopilot_workflow": "Autopilot Workflow",
+    "p3_title": "Automatisez ce qui n'a pas besoin de vous.",
+    "p3_desc": "Onboarding, SAV, contenu SEO, rapports... Votre temps est précieux.",
+    "automation": "Automatisation",
+    "onboarding": "Onboarding",
+    "seo": "SEO",
+    "neural_intranet": "Neural Intranet RAG",
+    "p4_title": "Un ChatGPT qui connaît votre entreprise.",
+    "p4_desc": "Documents internes, procédures, FAQ... Réponses instantanées, sécurité maximale.",
+    "private_ai": "IA Privée",
+    "secure": "Sécurisé",
+    "rag": "RAG"
+  },
+  "offer": {
+    "title": "Offre Exclusive",
+    "headline": "Obtenez votre",
+    "highlight": "audit gratuit",
+    "desc1": "En 24h, recevez une analyse complète de votre présence digitale",
+    "desc2": "avec les 3 actions prioritaires",
+    "desc3": "pour doubler vos leads.",
+    "leads": "Leads potentiels",
+    "delay": "Délai de livraison",
+    "price": "Gratuit",
+    "cta": "Demander mon audit",
+    "note": "Sans engagement. Analyse offerte en 24h."
+  },
+  "process": {
+    "title": "Notre Processus",
+    "subtitle": "Comment nous",
+    "work": "travaillons",
+    "desc": "Un processus rodé en 4 phases pour transformer votre vision en réalité digitale.",
+    "phase1_title": "Discovery",
+    "phase1_desc": "Nous analysons votre contexte, vos objectifs et vos contraintes pour poser les fondations.",
+    "phase2_title": "Création",
+    "phase2_desc": "Notre équipe conçoit et développe votre écosystème digital avec précision chirurgicale.",
+    "phase3_title": "Launch",
+    "phase3_desc": "Déploiement, tests, formation. Votre actif digital prend vie.",
+    "phase4_title": "Growth",
+    "phase4_desc": "Optimisation continue, analytics, évolutions. Votre croissance est notre obsession."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Nos",
+    "highlight": "achievements",
+    "desc": "Des écosystèmes digitaux qui génèrent des résultats concrets pour nos clients.",
+    "cta_question": "Envie de rejoindre nos succès stories ?",
+    "cta_link": "Démarrer votre projet",
+    "projects": [
+      {
+        "name": "HEAVORA",
+        "desc": "Official electronic music artist website. Hero video, matrix animation, Spotify embed, tour & booking section.",
+        "url": "https://heavora.vercel.app",
+        "tags": [
+          {
+            "label": "Smart Sites",
+            "color": "red"
+          },
+          {
+            "label": "Music Artist",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "name": "Lumina Design",
+        "desc": "Design portfolio with automatic SEO blog and AI content engine. 3x more organic traffic.",
+        "url": "https://lumina-design-nine.vercel.app",
+        "tags": [
+          {
+            "label": "Autopilot",
+            "color": "cyan"
+          },
+          {
+            "label": "SEO",
+            "color": "green"
+          }
+        ]
+      },
+      {
+        "name": "Asia Glow",
+        "desc": "Korean beauty e-commerce site with AI chatbot and customer service automation. Premium shopping experience.",
+        "url": "https://asia-glow.vercel.app",
+        "tags": [
+          {
+            "label": "Smart Sites",
+            "color": "pink"
+          },
+          {
+            "label": "Beauty",
+            "color": "pink"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "headline": "Prêt à",
+    "highlight": "transformer",
+    "question": "votre business ?",
+    "subtitle": "Discutons de votre projet et découvrez comment l'IA peut automatiser votre croissance.",
+    "offices": "Bureaux",
+    "location": "Lens, Belgique",
+    "email_label": "Email",
+    "email": "contact@pulseia.agency",
+    "phone_label": "Téléphone",
+    "name_label": "Nom",
+    "name_placeholder": "Votre nom",
+    "email_field_label": "Email",
+    "email_placeholder": "vous@exemple.com",
+    "company_label": "Entreprise",
+    "company_placeholder": "Votre entreprise",
+    "project_label": "Type de projet",
+    "project_placeholder": "Sélectionnez...",
+    "project_1": "Site Vitrine Premium",
+    "project_2": "Site Autonome IA",
+    "project_3": "Autopilot Workflow",
+    "project_4": "Neural Intranet",
+    "project_5": "Autre",
+    "message_label": "Message",
+    "message_placeholder": "Décrivez votre projet...",
+    "submit": "Envoyer le message",
+    "response_time": "Réponse garantie sous 24h"
+  },
+  "footer": {
+    "tagline": "Votre entreprise mérite un employé qui ne dort jamais.",
+    "agency": "Agence",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "copyright": "2026 Pulse ia. Tous droits réservés."
+  },
+  "solutions": {
+    "title": "Vos nouveaux super-pouvoirs",
+    "what": "Ce que",
+    "brand": "Pulseia",
+    "changes": "change pour vous",
+    "p1_title": "Nous ne construisons pas des sites.",
+    "p1_desc": "Nous créons des systèmes qui génèrent de la croissance en continu.",
+    "p2_title": "Votre site devient votre meilleur commercial.",
+    "p2_desc": "Chatbot, devis instantané, pages dynamiques, disponibilité permanente.",
+    "smart_sites": "Smart Sites",
+    "chatbot": "Chatbot IA",
+    "quotes": "Devis dynamique",
+    "autopilot_workflow": "Autopilot Workflow",
+    "p3_title": "Automatisez ce qui n'a pas besoin de vous.",
+    "p3_desc": "Onboarding, SAV, contenu SEO, rapports... Votre temps est précieux.",
+    "automation": "Automatisation",
+    "onboarding": "Onboarding",
+    "neural_intranet": "Neural Intranet RAG",
+    "p4_title": "Un ChatGPT qui connaît votre entreprise.",
+    "p4_desc": "Documents internes, procédures, FAQ... Réponses instantanées, sécurité maximale.",
+    "private_ai": "IA Privée",
+    "secure": "Sécurisé"
+  },
+  "expertises": {
+    "title": "Nos Expertises",
+    "subtitle1": "Un écosystème digital",
+    "subtitle2": "complet",
+    "subtitle3": "De la création de votre présence digitale à son automatisation complète, nous couvrons tous les aspects de votre croissance en ligne.",
+    "creation_digitale": "Création Digitale",
+    "sites_web": "Sites Web Sur Mesure",
+    "sites_vitrine": "Sites Vitrine Premium",
+    "ecommerce": "E-commerce",
+    "landing_pages": "Landing Pages",
+    "strategie_visibilite": "Stratégie & Visibilité",
+    "seo_premium": "SEO Premium",
+    "sea_publicite": "SEA / Publicité",
+    "strategie_digitale": "Stratégie digitale",
+    "reseaux_sociaux": "Réseaux Sociaux & Influence",
+    "community_management": "Community Management",
+    "campagnes_influence": "Campagnes influence",
+    "contenu_viral": "Contenu viral",
+    "production_av": "Production Audio-Visuelle",
+    "video_pro": "Vidéo professionnelle",
+    "photo_drone": "Photo & Drone",
+    "post_production": "Post-Production",
+    "intelligence_artificielle": "Intelligence Artificielle",
+    "agents_ia": "Agents IA sur mesure",
+    "site_autonome": "Site Autonome IA",
+    "integration_api": "Intégration API",
+    "packs_strategiques": "Packs Stratégiques",
+    "startup_prestige": "Startup Prestige",
+    "growth_engine": "Growth Engine",
+    "market_leader": "Market Leader"
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Common questions",
+    "questions": [
+      {
+        "q": "How long to create my site?",
+        "a": "We deliver your AI-powered site within 7 days. Complex projects may take 2-3 weeks. Our efficient process and pre-built components enable rapid deployment."
+      },
+      {
+        "q": "What are the recurring costs?",
+        "a": "No hidden costs. You only pay the initial development fee. Hosting, maintenance, and updates are included in our support packages starting at €99/month."
+      },
+      {
+        "q": "Is my data secure?",
+        "a": "Absolutely. We implement enterprise-grade security: SSL encryption, GDPR compliance, secure hosting, and regular backups. Your data never leaves EU servers."
+      },
+      {
+        "q": "Can I evolve my site later?",
+        "a": "Yes. Every site is built on scalable architecture. You can add features, pages, and integrations anytime. We're here for the long term."
+      },
+      {
+        "q": "Do you offer support after delivery?",
+        "a": "Yes. We offer 24/7 monitoring, bug fixes, and a dedicated support team. Most issues are resolved within hours, not days."
+      }
+    ]
+  }
+}

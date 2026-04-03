@@ -1,26 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-dark: #0a0a0f;
+  --color-dark-card: #111118;
+  --color-dark-border: #1e293b;
+  --color-accent-cyan: #00A3FF;
+  --color-accent-violet: #a855f7;
+  --font-inter: 'Inter', sans-serif;
+  --font-stencil: 'Big Shoulders Stencil', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a0a0f;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  transition: all 0.3s ease;
+}
+.navbar.scrolled {
+  background: rgba(10, 10, 15, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== GRID BACKGROUND ===== */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ===== NEURAL NETWORK ANIMATION ===== */
+.neural-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.neural-node {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #00A3FF;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00A3FF, 0 0 20px #00A3FF;
+  animation: pulse-node 3s ease-in-out infinite;
+}
+
+@keyframes pulse-node {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.5); }
+}
+
+.neural-line {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00A3FF, transparent);
+  transform-origin: left center;
+  animation: scan-line 4s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes scan-line {
+  0% { transform: scaleX(0); opacity: 0; }
+  50% { transform: scaleX(1); opacity: 0.4; }
+  100% { transform: scaleX(0); opacity: 0; }
+}
+
+/* ===== GLOW EFFECTS ===== */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 163, 255, 0.3), 0 0 40px rgba(0, 163, 255, 0.1);
+}
+
+.glow-violet {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3), 0 0 40px rgba(168, 85, 247, 0.1);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 20px rgba(0, 163, 255, 0.5);
+}
+
+.glow-text-violet {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+
+/* ===== GRADIENT TEXT ===== */
+.gradient-text {
+  background: linear-gradient(135deg, #00A3FF, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== GRADIENT BUTTON ===== */
+.btn-gradient {
+  background: linear-gradient(135deg, #00A3FF, #a855f7);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 163, 255, 0.3);
+}
+
+/* Gradient border button variant */
+.btn-outline-gradient {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gradient:hover {
+  border-color: #a855f7;
+  background: rgba(168, 85, 247, 0.1);
+}
+
+/* ===== GLASSMORPHISM CARD ===== */
+.glass-card {
+  background: linear-gradient(135deg, rgba(17, 17, 24, 0.8), rgba(17, 17, 24, 0.4));
+  border: 1px solid rgba(0, 163, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 163, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 163, 255, 0.1);
+}
+
+/* ===== SCROLL REVEAL ===== */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ===== CARD HOVER ===== */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 0 0 30px rgba(0, 163, 255, 0.2), 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== PILLAR CARDS ===== */
+.pillar-card {
+  background: linear-gradient(135deg, #111118 0%, #1a1a2e 100%);
+  border: 1px solid #1e293b;
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00A3FF, #a855f7);
+}
+
+.pillar-card:hover::before {
+  background: linear-gradient(90deg, #a855f7, #00A3FF);
+}
+
+/* ===== FAQ ACCORDION ===== */
+.faq-question {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding-top: 1rem;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-item .faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== TYPEWRITER EFFECT ===== */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: #00A3FF;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  vertical-align: text-bottom;
+}
+
+/* Cursor for typewriter text */
+.typewriter-text::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background: #00A3FF;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 1s infinite;
+}
+
+/* ===== FLOAT ANIMATION ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ===== TIMELINE ===== */
+.timeline-line {
+  background: linear-gradient(180deg, #00A3FF, #a855f7);
+}
+
+/* ===== SERVICE CATEGORY CARDS ===== */
+.service-category {
+  background: rgba(20, 20, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.service-category:hover {
+  border-color: #00A3FF;
+}
+
+/* ===== DARK CARD AND BORDER ===== */
+.bg-dark-card {
+  background: rgba(20, 20, 30, 0.6);
+}
+
+.border-dark-border {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ===== SELECTION COLOR ===== */
+::selection {
+  background: rgba(0, 163, 255, 0.3);
+  color: #ffffff;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00A3FF;
+}
+
+/* ===== FOCUS STYLES ===== */
+*:focus-visible {
+  outline: 2px solid #00A3FF;
+  outline-offset: 2px;
+}
+
+/* ===== SCAN LINE ANIMATION ===== */
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.scan-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0, 163, 255, 0.3), transparent);
+  animation: scan 3s linear infinite;
+}
+
+/* ===== GROUP LINK HOVER (for arrow animation) ===== */
+.group-link {
+  transition: all 0.3s ease;
+}
+
+.group-link:hover {
+  gap: 0.75rem;
 }
