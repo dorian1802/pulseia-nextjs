@@ -26,17 +26,21 @@ export default function Hero({ t, lang }: HeroProps) {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video background */}
-      <video 
-        className="fixed inset-0 w-full" 
-        style={{ height: '100vh', objectFit: 'cover' }} 
-        autoPlay 
-        muted 
-        loop 
-        playsInline
-      >
-        <source src="background.mp4" type="video/mp4" />
-      </video>
+      {/* Video/Gradient background */}
+      <div className="fixed inset-0 -z-10">
+        <video 
+          className="fixed inset-0 w-full h-full object-cover" 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          poster="/media/hero-fallback.jpg"
+        >
+          <source src="/background.mp4" type="video/mp4" />
+        </video>
+        {/* Fallback gradient if video fails */}
+        <div className="absolute inset-0 bg-gradient-to-br from-dark via-[#0a0a0f] to-accent-violet/20" />
+      </div>
       
       {/* Overlay */}
       <div className="fixed inset-0 bg-black/70" style={{ zIndex: -1 }} />

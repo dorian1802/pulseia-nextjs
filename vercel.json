@@ -1,7 +1,4 @@
 {
-  "buildCommand": "next build",
-  "framework": "nextjs",
-  "env": {
-    "TURBOPACK": "false"
-  }
+  "buildCommand": "NEXT_TURBOPACK=0 npx next build",
+  "framework": "nextjs"
 }
